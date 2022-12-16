@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=PT+Sans+Narrow&family=Rubik+Gemstones&family=Satisfy&family=Ubuntu:wght@300;400;500&display=swap');
+body{
+    background-color: hsl(235, 16%, 30%);
+    font-family: "ubuntu";
+    color: aliceblue;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    
+}
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 10cm;
+}
+.intro{
+    display: flex;
+    justify-content: center;
+    
+}
+.head-color{
+    color: #F8F988;
+}
+.intro-text{
+    width: 70%;
+    text-align: center;
+}
+.intro-para{
+    font-size: 17px;
+    
+}
+/* .skills{
+    text-align: center;
+} */
+.my-skill{
+    text-align: center;
+}
+.contact{
+    text-align: center;
+    font-size: 30px;
+}
+.get{
+    text-align: center;
+    font-size: 50px;
+}
+
+.input{
+    text-align: center;
+}
+.textarea{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.name, .sub, .msg{
+    margin: 20px 0px 20px 0px;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.email{
+    margin: 20px 0px 20px 0px;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.msg{
+    margin: 20px 0px 20px 0px;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contact-btn{
+    background-color: #F8F988;
+    border-radius: 3px;
+}
+.btn1{
+    display: flex;
+    justify-content: center;
+    
+}
