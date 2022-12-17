@@ -16,6 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Caveat&family=PT+Sans+Narrow&family=Rubik+Gemstones&family=Satisfy&family=Ubuntu:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     
     <link rel="stylesheet" href="style.css" />
     
@@ -132,10 +139,7 @@
       <h3 class="get head-color">Get in touch</h3>
       <div class="input-field">
         <div class="input">
-          <input
-            required
-            class="name"
-            type="text"
+          <input required class="name" type="text"
             placeholder="Name"
             name="name"
             id="name"
@@ -173,8 +177,26 @@
       <!-- Send Button -->
       <div class="btn1 my-4">
         <button style="margin-bottom: 10px;" type="button " class="btn contact-btn contact" onclick="sendEmail()">
-          Send
+            <a href="#myModal" data-toggle="modal">Send Message</a>
         </button>
+        <div id="myModal" class="modal fade">
+          <div class="modal-dialog modal-confirm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="icon-box">
+                  <i class="material-icons">&#xE876;</i>
+                </div>				
+                <h4 class="modal-title w-100">Awesome!</h4>	
+              </div>
+              <div class="modal-body">
+                <p class="text-center">Thank You for your Message, Have a nice Day.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+              </div>
+            </div>
+          </div>
+        </div> 
       </div>
       <footer>
         <div class="social">
@@ -230,7 +252,7 @@
           From: "poojadeveloper22@gmail.com",
           Subject: document.getElementById("subject").value,
           Body: "<h1>" + document.getElementById("message").value + "</h1",
-        }).then((message) => alert(message));
+        });
         Email.send({
           Host: "smtp.elasticemail.com",
           Username: "poojadeveloper22@gmail.com",
@@ -242,7 +264,7 @@
             "<h7>Hi &nbsp; <strong>" +
             document.getElementById("name").value +
             "</strong>,</h7><br><br><strong>Thank You for visitng my Portfolio.</strong>",
-        }).then((message) => alert(message));
+        });
       }
     </script>
   </body>

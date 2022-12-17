@@ -52,7 +52,7 @@ body {
 .my-skill {
   text-align: center;
 }
-.contact-us{
+.contact-us {
   text-align: center;
   font-size: 30px;
 }
@@ -90,7 +90,7 @@ body {
   border-radius: 10px;
 }
 .contact {
-   background-color: #F8F988;
+  background-color: #f8f988;
   color: hsl(235, 16%, 30%);
 }
 .btn1 {
@@ -285,15 +285,13 @@ p {
 footer p {
   margin-top: 40px;
   font-size: 17px;
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
 footer .icons {
   margin-top: 20px;
 }
-
-
 
 .wrapper .twitter:hover,
 .wrapper .twitter:hover .tooltip,
@@ -329,34 +327,37 @@ footer .icons {
     flex-direction: column;
   }
 }
-  .intro .head-intro {
-    padding: 0 100px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+.intro .head-intro {
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .head-intro .content .int-top {
-    font-size: 30px;
-    color: #FFB533;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+  font-size: 30px;
+  color: #ffb533;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
-
 .div {
-    /* width: 100px;
+  /* width: 100px;
     height: 100px;
     background: red; */
-    position: relative;
-    animation-name: mymove;
-    animation-duration: 10s;
-  }
-  
+  position: relative;
+  animation-name: mymove;
+  animation-duration: 10s;
+}
+
 @keyframes mymove {
-from {left: 0px;}
-to {left: 200px;}
+  from {
+    left: 0px;
+  }
+  to {
+    left: 200px;
+  }
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
@@ -503,6 +504,84 @@ p {
   color: aliceblue;
 }
 
+.modal-confirm {
+  color: #171515;
+  width: 325px;
+  font-size: 14px;
+}
+.modal-confirm .modal-content {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+}
+.modal-confirm .modal-header {
+  border-bottom: none;
+  position: relative;
+}
+.modal-confirm h4 {
+  text-align: center;
+  font-size: 26px;
+  margin: 30px 0 -15px;
+}
+.modal-confirm .form-control,
+.modal-confirm .btn {
+  min-height: 40px;
+  border-radius: 3px;
+}
+.modal-confirm .close {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+.modal-confirm .modal-footer {
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.modal-confirm .icon-box {
+  color: rgb(19, 18, 18);
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: -70px;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  z-index: 9;
+  background: #f8f988;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.modal-confirm .icon-box i {
+  font-size: 58px;
+  position: relative;
+  top: 3px;
+}
+.modal-confirm.modal-dialog {
+  margin-top: 80px;
+}
+.modal-confirm .btn {
+  color: rgb(19, 16, 16);
+  border-radius: 4px;
+  background: #f8f988;
+  text-decoration: none;
+  transition: all 0.4s;
+  line-height: normal;
+  border: none;
+}
+.modal-confirm .btn:hover,
+.modal-confirm .btn:focus {
+  background: #f8f988;
+  outline: none;
+}
+.trigger-btn {
+  display: inline-block;
+  margin: 100px auto;
+}
 
-
-
+.text-center {
+  color: #000;
+}
