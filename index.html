@@ -176,8 +176,8 @@
     </section>
       <!-- Send Button -->
       <div class="btn1 my-4">
-        <button style="margin-bottom: 10px;" type="button " class="btn contact-btn contact" onclick="sendEmail()">
-            <a href="#myModal" data-toggle="modal">Send Message</a>
+        <button style="margin-bottom: 10px;" type="button " class="btn contact-btn contact" onclick="validate()">
+            <a id="new" data-toggle="modal">Send Message</a>
         </button>
         <div id="myModal" class="modal fade">
           <div class="modal-dialog modal-confirm">
@@ -192,7 +192,7 @@
                 <p class="text-center">Thank You for your Message, Have a nice Day.</p>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+                <button class="btn btn-success btn-block" data-dismiss="modal" onclick="refreshPage()">OK</button>
               </div>
             </div>
           </div>
@@ -266,6 +266,15 @@
             "</strong>,</h7><br><br><strong>Thank You for visitng my Portfolio.</strong>",
         });
       }
+      function refreshPage(){
+        window.location.reload();
+    } 
+    function validate(){
+      if (document.getElementById("name").value != "" || document.getElementById("email").value != "" || document.getElementById("subject").value != "" || document.getElementById("message").value != ""){
+        document.getElementById("new").href = "#myModal";
+        sendEmail();
+    }
+  }
     </script>
   </body>
 </html>
