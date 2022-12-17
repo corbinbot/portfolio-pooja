@@ -47,9 +47,6 @@
         </div>
       </div>
     </nav>
-    <form method="post">
-      <input type="button" value="Send Mail" onclick="sendEmail()" />
-    </form>
     <div class="my-4 profile">
       <img class="image" src="profileimage.jpg" alt="image" />
     </div>
@@ -126,7 +123,9 @@
 
       <!-- Send Button -->
       <div class="btn1">
-        <button type="button " class="btn contact-btn">Primary</button>
+        <button type="button " class="btn contact-btn" onclick="sendEmail()">
+          Primary
+        </button>
       </div>
       <div class="footer-outer">
         <footer>
@@ -172,8 +171,20 @@
           Password: "AEA53D6EE2C141B17000E6E206DD556BD2B8",
           To: "rahejapooja670@gmail.com",
           From: "lawaniya.vivek19@gmail.com",
-          Subject: "noice",
-          Body: "hello babu",
+          Subject: document.getElementById("subject").value,
+          Body: "<h1>" + document.getElementById("message").value + "</h1",
+        }).then((message) => alert(message));
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "lawaniya.vivek19@gmail.com",
+          Password: "AEA53D6EE2C141B17000E6E206DD556BD2B8",
+          To: document.getElementById("email").value.toString(),
+          From: "lawaniya.vivek19@gmail.com",
+          Subject: "thank You",
+          Body:
+            "<h7>Hi &nbsp;" +
+            document.getElementById("name").value +
+            ",</h7><br><br><strong>Thank You for visitng my Portfolio.</strong>",
         }).then((message) => alert(message));
       }
     </script>
