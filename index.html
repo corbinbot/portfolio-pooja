@@ -16,12 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Caveat&family=PT+Sans+Narrow&family=Rubik+Gemstones&family=Satisfy&family=Ubuntu:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
-      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
-      crossorigin="anonymous"
-    />
+    
     <link rel="stylesheet" href="style.css" />
     
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -181,24 +176,36 @@
           Send
         </button>
       </div>
-      <div class="footer-outer">
-        <footer>
-          <!-- Logo -->
-          <!-- <img loading="lazy" src="Images/logo.png" alt="Logo"> -->
-          <p>Living, learning, & leveling up one day at a time.</p>
-
-          <!-- Social Handle Icons -->
-          <div class="">
-            <a href="https://instagram.com/rahejapooja670?igshid=YmMyMTA2M2Y=">
-              <i class="fab fa-instagram"></i>
+      <footer>
+        <div class="social">
+          <p>Follow me on social media</p>
+          <ul class="wrapper">
+            <a href="https://www.linkedin.com/in/pooja-raheja-797a58201" target="_blank">
+              <li class="icon linkedin">
+                <span class="tooltip">LinkedIn</span>
+                <span><i class="fab fa-linkedin"></i></span>
+              </li>
             </a>
-            <a href="https://github.com/poojaraheja"> </a>
-            <a href="https://www.linkedin.com/in/pooja-raheja-797a58201">
-              <i class="fab fa-linkedin-in"></i>
+            <a href="https://github.com/poojaraheja" target="_blank">
+              <li class="icon github">
+                <span class="tooltip">GitHub</span>
+                <span><i class="fab fa-github"></i></span>
+              </li>
             </a>
-            <a href="mailto: rahejapooja670@gmail.com"
-              ><span class="icon-linkedin"></span>
+            
+            <a href="https://instagram.com/rahejapooja670?igshid=YmMyMTA2M2Y=" target="_blank">
+              <li class="icon instagram">
+                <span class="tooltip">Instagram</span>
+                <span><i class="fab fa-instagram"></i></span>
+              </li>
             </a>
+            <a href="mailto: rahejapooja670@gmail.com" target="_blank">
+              <li class="icon twitter">
+                <span class="tooltip">Mail</span>
+                <span><i class="fas fa-envelope"></i></span>
+              </li>
+            </a>
+            
           </ul>
         </div>
         <div class="final_text"></div>
@@ -219,7 +226,7 @@
           Host: "smtp.elasticemail.com",
           Username: "poojadeveloper22@gmail.com",
           Password: "2EC15FF631B782FA471D455DBB23181A5DA8",
-          To: "viveklawaniya98@gmail.com",
+          To: "rahejapooja670@gmail.com",
           From: "poojadeveloper22@gmail.com",
           Subject: document.getElementById("subject").value,
           Body: "<h1>" + document.getElementById("message").value + "</h1",
@@ -230,16 +237,14 @@
           Password: "2EC15FF631B782FA471D455DBB23181A5DA8",
           To: document.getElementById("email").value.toString(),
           From: "poojadeveloper22@gmail.com",
-          Subject: "thank You",
+          Subject: "Thank You",
           Body:
-            "<h7>Hi &nbsp;" +
+            "<h7>Hi &nbsp; <strong>" +
             document.getElementById("name").value +
-            ",</h7><br><br><strong>Thank You for visitng my Portfolio.</strong>",
+            "</strong>,</h7><br><br><strong>Thank You for visitng my Portfolio.</strong>",
         }).then((message) => alert(message));
       }
     </script>
   </body>
 </html>
-<form class="d-flex" role="search">
-  <button class="btn btn-outline-success" type="submit">Search</button>
-</form>
+
