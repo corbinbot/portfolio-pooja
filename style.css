@@ -132,10 +132,25 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    justify-content: space-between;
     
   }
+  
   .html{
     margin: 60px;
+    justify-content: flex-start;
+  }
+  .flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .right{
+    margin-right: 40px;
+  }
+  .pie{
+    margin-left: 40px;
+    margin-top: 20px;
   }
   .footer-outer {
     background-color: #F8F988;
@@ -185,3 +200,10 @@ footer .icons i:hover {
     background-color: black;
     color: #FFB533;
 }
+@media (max-width: 1000px) {
+    .flex{
+        display: flex;
+        flex-direction: column;
+        
+      }
+  }
