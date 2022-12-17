@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=PT+Sans+Narrow&family=Rubik+Gemstones&family=Satisfy&family=Ubuntu:wght@300;400;500&display=swap');
 body{
     background-color: hsl(235, 16%, 30%);
-    font-family: "ubuntu";
+    /* font-family: "ubuntu"; */
     color: aliceblue;
+    font-family: "Indie Flower", cursive;
 }
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .profile{
     display: flex;
     justify-content: center;
@@ -48,7 +55,7 @@ body{
 .my-skill{
     text-align: center;
 }
-.contact{
+.contact-us{
     text-align: center;
     font-size: 30px;
 }
@@ -83,9 +90,9 @@ body{
     padding: 10px;
     border-radius: 10px;
 }
-.contact-btn{
-    background-color: #F8F988;
-    border-radius: 3px;
+.contact {
+   background-color: #F8F988;
+   color: hsl(235, 16%, 30%);
 }
 .btn1{
     display: flex;
@@ -169,49 +176,146 @@ body{
     padding: 50px;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
 footer {
-    width: 700px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px 0px;
+  background: rgb(0, 0, 15);
+  border-top: aliceblue 5px solid;
 }
 
-footer img {
-    width: 120px;
-    height: 120px;
+p {
+  color: aliceblue;
 }
 
-footer p {
-    margin-top: 40px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-footer .icons {
-    margin-top: 20px;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
 }
 
-footer .icons a {
-    text-decoration: none;
-    display: inline-block;
+.wrapper .icon {
+  position: relative;
+  background: aliceblue;
+  color: rgb(0, 0, 15);
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-footer .icons i {
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #FFB533;
-    color: #141535;
-    font-size: 20px;
-    margin: 0 7px;
-    cursor: pointer;
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: aliceblue;
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-footer .icons i:hover {
-    background-color: black;
-    color: #FFB533;
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: aliceblue;
+  top: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
+.wrapper .icon:hover .tooltip {
+  top: 60px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background: #0077b5;
+  color: aliceblue;
+}
+
+
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: aliceblue;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: aliceblue;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333;
+  color: aliceblue;
+}
+
 @media (max-width: 1000px) {
     .flex{
         display: flex;
@@ -219,3 +323,37 @@ footer .icons i:hover {
         
       }
   }
+ 
+  .intro .head-intro {
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.head-intro .content .int-top {
+    font-size: 30px;
+    color: #FFB533;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+
+.div {
+    /* width: 100px;
+    height: 100px;
+    background: red; */
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 10s;
+  }
+  
+@keyframes mymove {
+from {left: 0px;}
+to {left: 200px;}
+}
+
+
+
+
