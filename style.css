@@ -329,6 +329,7 @@ footer .icons {
     display: flex;
     flex-direction: column;
   }
+}
  
   .intro .head-intro {
     padding: 0 100px;
@@ -359,7 +360,3 @@ footer .icons {
 from {left: 0px;}
 to {left: 200px;}
 }
-
-
-
-
