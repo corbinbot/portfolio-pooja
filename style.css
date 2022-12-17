@@ -3,18 +3,17 @@ body {
   background-color: hsl(235, 16%, 30%);
   /* font-family: "ubuntu"; */
   color: aliceblue;
-    font-family: "Indie Flower", cursive;
+  font-family: "Indie Flower", cursive;
 }
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.profile{
-    display: flex;
-    justify-content: center;
-    
+.profile {
+  display: flex;
+  justify-content: center;
 }
 .image {
   width: 200px;
@@ -53,9 +52,9 @@ body {
 .my-skill {
   text-align: center;
 }
-.contact-us{
-    text-align: center;
-    font-size: 30px;
+.contact-us {
+  text-align: center;
+  font-size: 30px;
 }
 .get {
   text-align: center;
@@ -91,8 +90,8 @@ body {
   border-radius: 10px;
 }
 .contact {
-   background-color: #F8F988;
-   color: hsl(235, 16%, 30%);
+  background-color: #f8f988;
+  color: hsl(235, 16%, 30%);
 }
 .btn1 {
   display: flex;
@@ -284,14 +283,14 @@ p {
 }
 
 footer p {
-    margin-top: 40px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
+  margin-top: 40px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
-footer .icons {
-    margin-top: 20px;
+/* footer .icons {
+  margin-top: 20px;
 }
 
 
@@ -329,34 +328,4 @@ footer .icons {
     display: flex;
     flex-direction: column;
   }
-}
- 
-  .intro .head-intro {
-    padding: 0 100px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.head-intro .content .int-top {
-    font-size: 30px;
-    color: #FFB533;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-}
-
-
-.div {
-    /* width: 100px;
-    height: 100px;
-    background: red; */
-    position: relative;
-    animation-name: mymove;
-    animation-duration: 10s;
-  }
-  
-@keyframes mymove {
-from {left: 0px;}
-to {left: 200px;}
-}
+} */

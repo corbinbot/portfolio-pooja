@@ -16,6 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Caveat&family=PT+Sans+Narrow&family=Rubik+Gemstones&family=Satisfy&family=Ubuntu:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -170,39 +176,28 @@
       </div>
     </section>
       <!-- Send Button -->
-      <div class="btn1">
+      <div class="btn1 my-4">
         <button style="margin-bottom: 10px;" type="button " class="btn contact-btn contact" onclick="sendEmail()">
           Send
         </button>
-    </div>
-      <footer>
-        <div class="social">
-          <p>Follow me on social media</p>
-          <ul class="wrapper">
-            <a href="https://www.linkedin.com/in/pooja-raheja-797a58201" target="_blank">
-              <li class="icon linkedin">
-                <span class="tooltip">LinkedIn</span>
-                <span><i class="fab fa-linkedin"></i></span>
-              </li>
+      </div>
+      <div class="footer-outer">
+        <footer>
+          <!-- Logo -->
+          <!-- <img loading="lazy" src="Images/logo.png" alt="Logo"> -->
+          <p>Living, learning, & leveling up one day at a time.</p>
+
+          <!-- Social Handle Icons -->
+          <div class="">
+            <a href="https://instagram.com/rahejapooja670?igshid=YmMyMTA2M2Y=">
+              <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://github.com/poojaraheja" target="_blank">
-              <li class="icon github">
-                <span class="tooltip">GitHub</span>
-                <span><i class="fab fa-github"></i></span>
-              </li>
+            <a href="https://github.com/poojaraheja"> </a>
+            <a href="https://www.linkedin.com/in/pooja-raheja-797a58201">
+              <i class="fab fa-linkedin-in"></i>
             </a>
-            
-            <a href="https://instagram.com/rahejapooja670?igshid=YmMyMTA2M2Y=" target="_blank">
-              <li class="icon instagram">
-                <span class="tooltip">Instagram</span>
-                <span><i class="fab fa-instagram"></i></span>
-              </li>
-            </a>
-            <a href="mailto: rahejapooja670@gmail.com" target="_blank">
-              <li class="icon twitter">
-                <span class="tooltip">Mail</span>
-                <span><i class="fab fas fa-envelope"></i></span>
-              </li>
+            <a href="mailto: rahejapooja670@gmail.com"
+              ><span class="icon-linkedin"></span>
             </a>
           </ul>
         </div>
@@ -245,3 +240,6 @@
     </script>
   </body>
 </html>
+<form class="d-flex" role="search">
+  <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
