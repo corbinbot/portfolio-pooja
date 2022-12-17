@@ -81,3 +81,107 @@ body{
     
 }
 
+@property --p{
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+  }
+  
+  .pie {
+    --p:20;
+    --b:22px;
+    --c:darkred;
+    --w:150px;
+    
+    width:var(--w);
+    aspect-ratio:1;
+    position:relative;
+    display:inline-grid;
+    margin:5px;
+    place-content:center;
+    font-size:25px;
+    font-weight:bold;
+    font-family:sans-serif;
+  }
+  .pie:before,
+  .pie:after {
+    content:"";
+    position:absolute;
+    border-radius:50%;
+  }
+  .pie:before {
+    inset:0;
+    background:
+      radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+      conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+            mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+  }
+  .pie:after {
+    inset:calc(50% - var(--b)/2);
+    background:var(--c);
+    transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+  }
+  .animate {
+    animation:p 1s .5s both;
+  }
+  @keyframes p {
+    from{--p:0}
+  }
+  .skill1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+  .html{
+    margin: 60px;
+  }
+  .footer-outer {
+    background-color: #F8F988;
+    padding: 50px;
+}
+
+footer {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img {
+    width: 120px;
+    height: 120px;
+}
+
+footer p {
+    margin-top: 40px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+footer .icons {
+    margin-top: 20px;
+}
+
+footer .icons a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer .icons i {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #FFB533;
+    color: #141535;
+    font-size: 20px;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+footer .icons i:hover {
+    background-color: black;
+    color: #FFB533;
+}
