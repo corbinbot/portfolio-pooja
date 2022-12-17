@@ -32,10 +32,13 @@ body{
     color: #F8F988;
 }
 .intro-text{
-    width: 70%;
+    margin-top: 20px;
+    width: 60%;
     text-align: center;
 }
 .intro-para{
+    margin-top: 40px;
+    margin: 20px;
     font-size: 17px;
     
 }
