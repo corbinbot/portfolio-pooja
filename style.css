@@ -168,7 +168,6 @@ body {
   }
 }
 
-
 .html {
   margin: 60px;
   justify-content: flex-start;
@@ -181,7 +180,6 @@ body {
 .right {
   margin-right: 40px;
 }
-
 
 /* footer */
 .footer-outer {
@@ -473,8 +471,6 @@ p {
   background: #0077b5;
   color: aliceblue;
 }
-
-
 
 .wrapper .twitter:hover,
 .wrapper .twitter:hover .tooltip,
